@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1028432926993",
+    "project_id": "library-app-for-test",
+    "storage_bucket": "library-app-for-test.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028432926993:android:1b02169d02f928975714b0",
+        "android_client_info": {
+          "package_name": "com.rakshapalsinghlibrary.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSZFqqyaksNmE5yk9uxL9sbAD3GUrpITs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
