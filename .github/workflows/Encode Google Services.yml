@@ -1,0 +1,10 @@
+name: Encode Google Services
+on: workflow_dispatch
+
+jobs:
+  encode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Convert to Base64
+        run: base64 -w 0 android/app/google-services.json
