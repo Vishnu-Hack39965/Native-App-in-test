@@ -12,7 +12,20 @@
           "package_name": "com.rakshapalsinghlibrary.app"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "707052879981-55q8hgauera8i8hsb57rhgskanqmeu3s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rakshapalsinghlibrary.app",
+            "certificate_hash": "1a4acd4e86a2d9a74ba0c3d5a3eab3b7990d576e"
+          }
+        },
+        {
+          "client_id": "707052879981-tc1ietfi1e0ep2j6eo4i1gi21gbhfofb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBhfSSwE46blDbWYP8X-5KbQdeZAPEXbH0"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "707052879981-tc1ietfi1e0ep2j6eo4i1gi21gbhfofb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
