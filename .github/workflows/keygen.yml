@@ -1,0 +1,24 @@
+name: Generate Signing Key
+on: workflow_dispatch
+
+jobs:
+  keygen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate Keystore + SHA keys
+        run: |
+          keytool -genkeypair -v \
+            -keystore release.keystore \
+            -alias rakshapal \
+            -keyalg RSA -keysize 2048 \
+            -validity 10000 \
+            -dname "CN=RakshapalLibrary, OU=Dev, O=Library, L=Haridwar, S=UK, C=IN" \
+            -storepass android123 \
+            -keypass android123
+
+          echo "=== DEBUG SHA1 ==="
+          keytool -list -v -keystore release.keystore \
+            -alias rakshapal -storepass android123 | grep SHA
+
+          echo "=== BASE64 KEYSTORE ==="
+          base64 -w 0 release.keystore
